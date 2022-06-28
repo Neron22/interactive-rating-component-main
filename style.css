@@ -134,12 +134,13 @@ body {
   transition: 0.2s ease;
 }
 
-.card-ratings ul li:active {
-  background-color: #7c8896;
-  color: white;
+.active {
+  background-color: #7c8896 !important;
+  color: white !important;
 }
 
 .btn-submit {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,6 +172,13 @@ body {
   transition: 0.3s ease;
 }
 
+.btn-select {
+  position: absolute;
+  top: 44px;
+  color: #fc7612;
+  font-size: 12px;
+}
+
 .card-ty {
   position: absolute;
   background: -webkit-gradient(linear, left top, left bottom, from(#242934), to(#181e27));
@@ -186,7 +194,12 @@ body {
   padding-right: 36px;
   padding-bottom: 12px;
   z-index: 1;
+}
+
+.hidden, .hidden2 {
   visibility: hidden;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .card-ty-img {
